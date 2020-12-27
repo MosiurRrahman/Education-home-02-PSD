@@ -37,7 +37,7 @@ body {
     z-index: 999;
     top: 0;
     overflow-x: hidden;
-    background: #252c3a;
+    /* background: #252c3a; */
     text-align: center;
 }
 
@@ -142,6 +142,11 @@ img.logo {
 
 
 /* depertment css */
+
+.depertment {
+    position: relative;
+    z-index: 10;
+}
 
 .depertment-item img {
     max-width: 100px;
@@ -405,7 +410,7 @@ i.fas.fa-comment-dots {
 
 .sign_up {
     background: url(../images/signup-bg.jpg) no-repeat center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .signUp-from h4 {
@@ -421,6 +426,7 @@ i.fas.fa-comment-dots {
     padding: 40px 40px;
     border-radius: 5px;
     box-shadow: 0px 5px 11px #a3a3ab;
+    margin: -60px 0;
 }
 
 .btn.btn-primary {
@@ -433,8 +439,8 @@ i.fas.fa-comment-dots {
     font-weight: 400;
 }
 
-.btn.btn-primary:hover {
-    /* opacity: .6; */
+section.sign_up .row {
+    align-items: center;
 }
 
 
