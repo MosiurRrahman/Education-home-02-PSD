@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    vertical-align: middle;
+    list-style: none;
+}
+
+img {
+    list-style-type: none;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* naver start */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    overflow-x: hidden;
+    background: #252c3a;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #43cb83;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+img.logo {
+    max-width: 48px;
+}
+
+.bg {
+    background: #252c3a;
+    animation: fix 1s;
+}
+
+@keyframes fix {
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+.btn.link.btn-primary {
+    padding: 5px 45px;
+    color: #43cb83;
+    background: #fff;
+    box-shadow: 1px 1px 8px #ddd;
+    transition: all linear .3s;
+}
+
+.btn.link.btn-primary:hover {
+    color: #ffffff;
+    background: #43cb83;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #43cb83 !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #5a6e79;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+/* navbar end */
+
+
+/* hero */
+
+.hero {
+    background: url(../images/hero-bg.png) center no-repeat;
+    background-size: contain;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.hero::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg-shape.png) no-repeat;
+    background-position: right center;
+    background-size: contain;
+    top: 102px;
+    right: 0;
+    z-index: -1;
+    max-width: 500px;
+}
+
+.hero-text {
+    padding-top: 20%;
+}
+
+.hero-text h2 {
+    color: #43cb83;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.hero-text p {
+    color: #5a6e79;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* depertment css */
+
+.depertment-item img {
+    max-width: 100px;
+}
+
+.depertment-bg1 {
+    background: #f1e3fc;
+}
+
+.depertment-bg2 {
+    background: #e3fcfa;
+}
+
+.depertment-bg3 {
+    background: #fcf0e3;
+}
+
+.depertment-bg4 {
+    background: #fceee3;
+}
+
+.depertment-bg5 {
+    background: #f3fce3;
+}
+
+.depertment-bg6 {
+    background: #e3f3fc;
+}
+
+.depertment-item {
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.depertment-item h5 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 32px;
+    padding-bottom: 22px;
+    color: #252c3a;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* depertment css end */
+
+
+/* about */
+
+.about {
+    padding: 110px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.about::after {
+    position: absolute;
+    content: "";
+    top: -66px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/video-bg-shaper-1.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: contain;
+    background-position: left center;
+    margin: -27x;
+}
+
+.about-txt h2 {
+    font-size: 40px;
+    margin-bottom: 38px;
+}
+
+.about-txt p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+p.about-details {
+    margin-bottom: 55px;
+}
+
+.about-count h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.about-count h2 span {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.about-count {
+    color: #ffba00;
+}
+
+.about-counts.d-flex {
+    justify-content: space-between;
+}
+
+.about-count:nth-child(2) {
+    color: #ff5f72;
+}
+
+.about-count:nth-child(3) {
+    color: #43cb83;
+}
+
+
+/* vedio */
+
+.about-vedio {
+    position: relative;
+    z-index: 1;
+}
+
+.vedio-play {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background: #43cb83;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.vedio-play i {
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+
+/* vedio end */
+
+
+/* nesw css */
+
+.news-title h2 {
+    color: #43cb83;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.news-description h5 {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 695px;
+    line-height: 26px;
+    color: #5a6e79;
+}
+
+.news-description .btn-primary {
+    color: #fff;
+    background: #43cb83;
+    border-color: snow;
+    border-radius: 50px;
+    padding: 15px 53px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+section.news {
+    padding: 100px 0;
+}
+
+.news-description {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(221 221 221);
+    padding-bottom: 68px;
+    flex-wrap: wrap;
+}
+
+.news-comment {
+    justify-content: space-between;
+}
+
+.news-item h5 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #252c3a;
+}
+
+.news-item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5a6e79;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.news-item {
+    padding: 50px 0 60px 0;
+}
+
+.news-icon .fas span {
+    margin-left: 6px;
+}
+
+.news-icon .fas .fas-comment-dots {
+    margin-left: 5px;
+}
+
+.icon-color {
+    color: #43cb83;
+}
+
+i.fas span {
+    color: #5a6e79;
+}
+
+i.fas.fa-comment-dots {
+    margin-left: 20px;
+}
+
+.news-icon {
+    color: #5a6e79;
+}
+
+
+/* nesw css end */
+
+
+/* sign-up css */
+
+.sign-content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sign-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.sign-content h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #252c3a;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sign-content h5 span {
+    color: #fb384d;
+}
+
+.sign_up {
+    background: url(../images/signup-bg.jpg) no-repeat center;
+    background-size: contain;
+}
+
+.signUp-from h4 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.signUp-from {
+    background: #fff;
+    padding: 40px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 11px #a3a3ab;
+}
+
+.btn.btn-primary {
+    color: rgb(255 255 255);
+    background: rgb(67 203 131);
+    border-color: rgb(255 250 250);
+    border-radius: 50px;
+    padding: 15px 53px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.btn.btn-primary:hover {
+    /* opacity: .6; */
+}
+
+
+/* sign-up css end */
+
+
+/* footer css */
+
+
+/* footer */
+
+.footer {
+    background: #252c3a;
+    padding: 80px 0 100px 0;
+}
+
+.footer-heading img {
+    max-width: 180px;
+    height: 40px;
+}
+
+.footer-heading h4 {
+    color: #fff;
+    padding-bottom: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.footer-heading span {
+    color: #6b6b6b;
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.footer-subHeading {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 25px 0;
+}
+
+.footer-heading P {
+    color: #969595;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.social-link {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.social-link li a {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    left: 0;
+    color: #dedede;
+    transition: .3s;
+    font-size: 20px;
+}
+
+.social-link a:hover {
+    color: rgb(0 137 253);
+}
+
+.footer-heading .input-group-text {
+    background: #ffc178;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/* copyright */
+
+.copyrigth {
+    background: #1d232e;
+    padding: 25px 0 23px 0;
+}
+
+.copyrigth-text h3 {
+    font-size: 14px;
+    text-align: center;
+}
+
+.copyrigth-text.flex {
+    justify-content: space-between;
+    color: #6b6b6b;
+    font-size: 13px;
+}
+
+.social-link {
+    padding-left: 0;
+}
+
+ul.copyright-link a {
+    margin: 0 8px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #6b6b6b;
+    font-weight: 400;
+    font-family: "Roboto";
+}
